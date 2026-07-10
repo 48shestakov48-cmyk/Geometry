@@ -194,13 +194,13 @@ button:focus-visible {
   min-height: 100svh;
   display: flex;
   align-items: center;
-  padding-top: 64px;
-  padding-bottom: 16px;
+  padding-top: 48px;
+  padding-bottom: 8px;
 }
 .hero-grid {
   display: flex;
   flex-direction: column;
-  gap: 20px;
+  gap: 10px;
   width: 100%;
 }
 
@@ -213,15 +213,16 @@ button:focus-visible {
 .hero-photo-card img:first-child {
   width: 100%;
   height: auto;
-  aspect-ratio: 690 / 340;
+  aspect-ratio: 4 / 3;
   object-fit: cover;
+  object-position: center top;
 }
 .hero-photo-badge {
   position: absolute;
   right: 12px;
   bottom: 12px;
-  width: 44px;
-  height: 44px;
+  width: 40px;
+  height: 40px;
   border-radius: 50%;
   box-shadow: 0 4px 14px rgba(0,0,0,0.5);
 }
@@ -230,47 +231,47 @@ button:focus-visible {
   display: inline-flex;
   align-items: center;
   gap: 8px;
-  font-size: 0.78rem;
+  font-size: 0.74rem;
   font-weight: 700;
   letter-spacing: 0.06em;
   text-transform: uppercase;
   color: var(--yellow);
-  margin-bottom: 12px;
+  margin-bottom: 6px;
 }
-.eyebrow svg { color: var(--yellow); width: 16px; height: 16px; }
+.eyebrow svg { color: var(--yellow); width: 15px; height: 15px; }
 
 h1 {
-  font-size: clamp(1.6rem, 6.5vw, 2.5rem);
+  font-size: clamp(1.4rem, 5.8vw, 2.5rem);
   font-weight: 800;
-  line-height: 1.18;
+  line-height: 1.14;
   letter-spacing: -0.02em;
-  margin-bottom: 12px;
+  margin-bottom: 6px;
 }
 .accent { display: block; color: var(--yellow); }
 
 .lead {
-  font-size: 0.95rem;
+  font-size: 0.88rem;
   color: var(--text-dim);
   max-width: 48ch;
-  margin-bottom: 20px;
+  margin-bottom: 10px;
 }
 
 .cta-row {
   display: flex;
   flex-wrap: wrap;
-  gap: 10px;
-  margin-bottom: 20px;
+  gap: 8px;
+  margin-bottom: 8px;
 }
 .btn {
   display: inline-flex;
   align-items: center;
   justify-content: center;
   gap: 8px;
-  min-height: 48px;
-  padding: 0 24px;
+  min-height: 44px;
+  padding: 0 22px;
   border-radius: 100px;
   font-family: var(--font);
-  font-size: 0.9rem;
+  font-size: 0.88rem;
   font-weight: 700;
   cursor: pointer;
   touch-action: manipulation;
@@ -284,56 +285,54 @@ h1 {
 .btn-ghost:hover { border-color: var(--yellow); color: var(--yellow); }
 .btn-ghost svg { color: currentColor; }
 
+.trust-row {
+  display: flex;
+  flex-wrap: wrap;
+  column-gap: 14px;
+  row-gap: 4px;
+  padding: 6px 0;
+  border-top: 1px solid var(--border);
+  border-bottom: 1px solid var(--border);
+  margin-bottom: 8px;
+}
+.trust-row li {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 0.72rem;
+  font-weight: 600;
+  color: var(--text-dim);
+  white-space: nowrap;
+}
+.trust-row svg { color: var(--yellow); width: 14px; height: 14px; }
+
 .founder-row {
   display: flex;
   align-items: center;
   gap: 10px;
 }
 .founder-row img {
-  width: 32px;
-  height: 32px;
+  width: 28px;
+  height: 28px;
   border-radius: 50%;
   border: 1.5px solid rgba(255,237,3,0.5);
   object-fit: cover;
   flex: none;
 }
 .founder-row span {
-  font-size: 0.8rem;
+  font-size: 0.76rem;
   color: var(--text-dim);
 }
 .founder-row strong { color: var(--text); font-weight: 700; }
-
-/* ================================================================
-   TRUST BAR (below the fold — not part of the one-screen hero)
-================================================================ */
-.trust-bar {
-  border-top: 1px solid var(--border);
-  padding: 24px 0;
-}
-.trust-bar-inner {
-  display: flex;
-  flex-direction: column;
-  gap: 14px;
-}
-.trust-item {
-  display: flex;
-  align-items: center;
-  gap: 10px;
-  font-size: 0.85rem;
-  font-weight: 600;
-  color: var(--text-dim);
-}
-.trust-item svg { color: var(--yellow); }
 
 /* ================================================================
    DESKTOP
 ================================================================ */
 @media (min-width: 600px) {
   .cta-row { flex-wrap: nowrap; }
-}
-
-@media (min-width: 720px) {
-  .trust-bar-inner { flex-direction: row; flex-wrap: wrap; gap: 32px; justify-content: center; }
+  .trust-row { justify-content: flex-start; column-gap: 24px; }
+  .trust-row li { font-size: 0.8rem; }
+  .trust-row svg { width: 16px; height: 16px; }
 }
 
 @media (min-width: 960px) {
@@ -346,13 +345,15 @@ h1 {
   }
   .hero-content { order: 1; flex: 1 1 52%; max-width: 560px; }
   .hero-photo-card { order: 2; flex: 1 1 48%; }
-  .hero-photo-card img:first-child { aspect-ratio: 4 / 3; }
+  .hero-photo-card img:first-child { aspect-ratio: 4 / 3.6; }
   .hero-photo-badge { width: 56px; height: 56px; }
 
   h1 { font-size: clamp(2rem, 3.2vw, 2.7rem); }
-  .lead { font-size: 1.02rem; }
+  .lead { font-size: 1.02rem; margin-bottom: 20px; }
+  .cta-row { margin-bottom: 20px; }
+  .trust-row { margin-bottom: 18px; }
 }
 
-@media (min-height: 780px) and (min-width: 960px) {
-  .hero-photo-card img:first-child { aspect-ratio: 16 / 11; }
+@media (min-height: 800px) and (min-width: 960px) {
+  .hero-photo-card img:first-child { aspect-ratio: 4 / 4.2; }
 }
