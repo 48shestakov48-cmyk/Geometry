@@ -772,6 +772,5 @@ footer { padding: var(--space-4) 0; border-top: 1px solid var(--border-soft); }
 }
 
 @media (max-width: 560px) {
-  .nav-right .lang-switch,
   .nav-right > a.btn { display: none; }
 }
