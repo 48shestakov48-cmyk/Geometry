@@ -81,8 +81,11 @@
      HERO
 ============================================================ -->
 <section id="hero" aria-labelledby="hero-heading">
+  <div class="hero-photo" aria-hidden="true">
+    <img src="img/hero/bmw-hexwall.jpg" alt="" />
+    <div class="hero-photo-overlay"></div>
+  </div>
   <div class="hex-field" aria-hidden="true">
-    <div class="hex-grid" id="heroHex"></div>
     <div class="hex-glow blue"></div>
     <div class="hex-glow green"></div>
   </div>
@@ -112,6 +115,21 @@
     </div>
   </div>
 </section>
+
+<!-- ============================================================
+     BRAND MARQUEE — trust strip, not a counted section
+============================================================ -->
+<div class="brand-marquee" aria-label="Marki, z którymi pracujemy">
+  <div class="marquee-label" data-i18n="marquee.label">Zaufali nam właściciele</div>
+  <div class="marquee-track">
+    <div class="marquee-group">
+      <span>BMW</span><span>AUDI</span><span>MERCEDES-BENZ</span><span>DUCATI</span><span>VOLKSWAGEN</span>
+    </div>
+    <div class="marquee-group" aria-hidden="true">
+      <span>BMW</span><span>AUDI</span><span>MERCEDES-BENZ</span><span>DUCATI</span><span>VOLKSWAGEN</span>
+    </div>
+  </div>
+</div>
 
 <!-- ============================================================
      INSIGHT
@@ -166,6 +184,13 @@
       </div>
       <h3 data-i18n="services.wnetrze.title">Detailing wnętrza</h3>
       <p data-i18n="services.wnetrze.desc">Czyszczenie tapicerki, skóry i plastików. Odświeżamy wnętrze bez agresywnej chemii.</p>
+    </div>
+    <div class="service-card rv">
+      <div class="service-icon" aria-hidden="true">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4"><path d="M4 7h12l-3.5-3.5M20 17H8l3.5 3.5"/><path d="M4 7v6a2 2 0 002 2h2M20 17v-6a2 2 0 00-2-2h-2"/></svg>
+      </div>
+      <h3 data-i18n="services.doortodoor.title">Odbiór i dowóz auta</h3>
+      <p data-i18n="services.doortodoor.desc">Odbieramy Twoje auto z dowolnego miejsca w Krakowie, wykonujemy usługę w naszym serwisie i odwozimy je z powrotem — bez Twojego zaangażowania.</p>
     </div>
   </div>
 </section>
@@ -241,10 +266,16 @@
 
     <div class="garage-grid">
       <figure class="garage-item rv ph" data-car="BMW M8 Gran Coupe"></figure>
-      <figure class="garage-item rv rv-d1 ph" data-car="Audi SQ7"></figure>
+      <figure class="garage-item rv rv-d1">
+        <img src="img/hero/audi-hexwall.jpg" alt="Audi — detailing NM Detailing Kraków" loading="lazy" />
+        <div class="garage-caption">Audi</div>
+      </figure>
       <figure class="garage-item rv rv-d2 ph" data-car="Mercedes G-Class"></figure>
       <figure class="garage-item rv ph" data-car="Ducati Streetfighter V4"></figure>
-      <figure class="garage-item rv rv-d1 ph" data-car="BMW 3-Series"></figure>
+      <figure class="garage-item rv rv-d1">
+        <img src="img/hero/bmw-hexwall.jpg" alt="BMW 3-Series — detailing NM Detailing Kraków" loading="lazy" style="object-position: 50% 62%;" />
+        <div class="garage-caption">BMW 3-Series</div>
+      </figure>
       <figure class="garage-item rv rv-d2 ph" data-car="VW Golf GTI"></figure>
     </div>
 

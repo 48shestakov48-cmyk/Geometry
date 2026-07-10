@@ -63,14 +63,6 @@
     revealEls.forEach(function (el) { io.observe(el); });
   }
 
-  /* ---------- hero hex signature: light up once on load ---------- */
-  var heroHex = document.getElementById('heroHex');
-  if (heroHex && !reduceMotion) {
-    requestAnimationFrame(function () {
-      setTimeout(function () { heroHex.classList.add('lit'); }, 250);
-    });
-  }
-
   /* ---------- before/after draggable slider ---------- */
   var slider = document.getElementById('baSlider');
   var handle = document.getElementById('baHandle');

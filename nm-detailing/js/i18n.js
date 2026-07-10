@@ -32,6 +32,10 @@ window.NM_I18N = {
     "services.mycie.desc": "Metoda dwuwiaderkowa, pH-neutralne środki, zero szczotek myjni automatycznej. Myjemy auto tak, jakby było nasze.",
     "services.wnetrze.title": "Detailing wnętrza",
     "services.wnetrze.desc": "Czyszczenie tapicerki, skóry i plastików. Odświeżamy wnętrze bez agresywnej chemii.",
+    "services.doortodoor.title": "Odbiór i dowóz auta",
+    "services.doortodoor.desc": "Odbieramy Twoje auto z dowolnego miejsca w Krakowie, wykonujemy usługę w naszym serwisie i odwozimy je z powrotem — bez Twojego zaangażowania.",
+
+    "marquee.label": "Zaufali nam właściciele",
 
     "process.eyebrow": "Protokół pracy",
     "process.title": "Od przyjęcia do odbioru",
@@ -107,6 +111,10 @@ window.NM_I18N = {
     "services.mycie.desc": "Метод двох відер, pH-нейтральні засоби, жодних щіток автомийки. Миємо авто так, ніби воно наше.",
     "services.wnetrze.title": "Детейлінг салону",
     "services.wnetrze.desc": "Чищення оббивки, шкіри та пластику. Освіжаємо салон без агресивної хімії.",
+    "services.doortodoor.title": "Забираємо та повертаємо авто",
+    "services.doortodoor.desc": "Забираємо ваше авто з будь-якого місця у Кракові, виконуємо роботу в нашому сервісі та привозимо назад — без вашої участі.",
+
+    "marquee.label": "Нам довіряють власники",
 
     "process.eyebrow": "Протокол роботи",
     "process.title": "Від прийому до видачі",
@@ -182,6 +190,10 @@ window.NM_I18N = {
     "services.mycie.desc": "Two-bucket method, pH-neutral products, zero automatic brushes. We wash your car like it's ours.",
     "services.wnetrze.title": "Interior Detailing",
     "services.wnetrze.desc": "Upholstery, leather and plastic cleaning. We refresh the cabin without harsh chemicals.",
+    "services.doortodoor.title": "Pickup & Drop-off",
+    "services.doortodoor.desc": "We collect your car from anywhere in Kraków, complete the work at our workshop, and drive it back — zero effort on your part.",
+
+    "marquee.label": "Trusted by owners of",
 
     "process.eyebrow": "Our protocol",
     "process.title": "From drop-off to pickup",
