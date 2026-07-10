@@ -453,6 +453,13 @@ header {
   border-top: 1px solid var(--border-soft);
   flex-wrap: wrap;
 }
+
+@media (max-width: 480px) {
+  .hero-stats { flex-wrap: nowrap; gap: 14px; }
+  .hero-stat { flex: 1; min-width: 0; }
+  .hero-stat .num { font-size: 1.3rem; }
+  .hero-stat .label { font-size: 0.62rem; letter-spacing: 0.04em; }
+}
 .hero-stat .num {
   font-family: var(--font-mono);
   font-size: 1.6rem;
