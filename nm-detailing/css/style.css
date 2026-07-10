@@ -429,6 +429,17 @@ header {
 
 .hero-content { position: relative; z-index: 2; max-width: 800px; }
 
+@media (max-width: 480px) {
+  #hero { align-items: flex-start; padding-top: 96px; padding-bottom: 24px; }
+  .hero-content {
+    display: flex;
+    flex-direction: column;
+    min-height: calc(100svh - 96px - 24px);
+    width: 100%;
+  }
+  .hero-stats { margin-top: auto; padding-top: var(--space-3); }
+}
+
 .hero-content h1 { margin-bottom: var(--space-3); }
 .hero-content .lede { font-size: 1.15rem; max-width: 540px; margin-bottom: var(--space-4); }
 
@@ -438,8 +449,8 @@ header {
   .hero-cta { flex-wrap: nowrap; gap: 8px; margin-bottom: var(--space-4); }
   .hero-cta .btn {
     flex: 1;
-    padding: 12px 8px;
-    font-size: 0.68rem;
+    padding: 14px 10px;
+    font-size: 0.82rem;
     text-align: center;
     justify-content: center;
     white-space: normal;
