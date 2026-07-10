@@ -216,7 +216,7 @@ p { color: var(--text-dim); }
 
 @media (min-width: 900px) {
   .hero-photo { left: 38%; }
-  .hero-photo img { object-position: 50% 28%; }
+  .hero-photo img { object-position: 48% 60%; }
   .hero-photo-overlay {
     background:
       linear-gradient(90deg, var(--bg) 0%, var(--bg) 8%, rgba(10,10,10,0.75) 22%, transparent 55%),
@@ -433,6 +433,18 @@ header {
 .hero-content .lede { font-size: 1.15rem; max-width: 540px; margin-bottom: var(--space-4); }
 
 .hero-cta { display: flex; flex-wrap: wrap; gap: var(--space-2); margin-bottom: var(--space-5); }
+
+@media (max-width: 480px) {
+  .hero-cta { flex-wrap: nowrap; gap: 10px; }
+  .hero-cta .btn {
+    flex: 1;
+    padding: 13px 10px;
+    font-size: 0.76rem;
+    text-align: center;
+    justify-content: center;
+    white-space: normal;
+  }
+}
 
 .hero-stats {
   display: flex;
