@@ -16,7 +16,7 @@ window.NM_I18N = {
     "hero.ctaSecondary": "Zobacz realizacje",
     "hero.stat1": "Lokalizacje w Krakowie",
     "hero.stat2": "Języki obsługi — PL / UA / EN",
-    "hero.stat3": "Obserwujących na Instagramie",
+    "hero.stat3": "Zadowolonych klientów",
 
     "insight.quote": "To nie kwestia marki.<br>To kwestia pielęgnacji i podejścia.",
     "insight.question": "<strong>Dlaczego jedne auta po latach wyglądają jak nowe, a inne szybko tracą swój wygląd?</strong>",
@@ -95,7 +95,7 @@ window.NM_I18N = {
     "hero.ctaSecondary": "Переглянути реалізації",
     "hero.stat1": "Локації у Кракові",
     "hero.stat2": "Мови обслуговування — PL / UA / EN",
-    "hero.stat3": "Підписників в Instagram",
+    "hero.stat3": "Задоволених клієнтів",
 
     "insight.quote": "Це не питання марки.<br>Це питання догляду та підходу.",
     "insight.question": "<strong>Чому одні авто з роками виглядають як нові, а інші швидко втрачають вигляд?</strong>",
@@ -174,7 +174,7 @@ window.NM_I18N = {
     "hero.ctaSecondary": "See our work",
     "hero.stat1": "Locations in Kraków",
     "hero.stat2": "Languages — PL / UA / EN",
-    "hero.stat3": "Instagram followers",
+    "hero.stat3": "Satisfied clients",
 
     "insight.quote": "It's not about the brand.<br>It's about care and approach.",
     "insight.question": "<strong>Why do some cars look new for years, while others fade fast?</strong>",
