@@ -4,8 +4,6 @@
    Type: Manrope
    ============================================================ */
 
-@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&display=swap');
-
 *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
 
 :root {
@@ -52,16 +50,30 @@ button:focus-visible {
   border-radius: 6px;
 }
 
+.skip-link {
+  position: absolute;
+  top: -60px;
+  left: 12px;
+  z-index: 200;
+  background: var(--yellow);
+  color: var(--ink);
+  font-weight: 700;
+  padding: 12px 20px;
+  border-radius: 8px;
+  transition: top 0.2s ease;
+}
+.skip-link:focus { top: 12px; }
+
 /* ── Reveal-on-scroll (opacity/transform only, respects reduced motion) ── */
 .rv {
   opacity: 0;
   transform: translateY(14px);
-  transition: opacity 0.5s ease, transform 0.5s ease;
+  transition: opacity 0.35s ease-out, transform 0.35s ease-out;
 }
 .rv.visible { opacity: 1; transform: translateY(0); }
-.rv-delay-1.visible { transition-delay: 0.08s; }
-.rv-delay-2.visible { transition-delay: 0.16s; }
-.rv-delay-3.visible { transition-delay: 0.24s; }
+.rv-delay-1.visible { transition-delay: 0.05s; }
+.rv-delay-2.visible { transition-delay: 0.1s; }
+.rv-delay-3.visible { transition-delay: 0.15s; }
 @media (prefers-reduced-motion: reduce) {
   .rv { opacity: 1; transform: none; transition: none; }
 }
@@ -125,6 +137,8 @@ button:focus-visible {
   border-radius: 50%;
   border: 1px solid var(--border);
   color: var(--text);
+  cursor: pointer;
+  touch-action: manipulation;
   transition: border-color 0.2s ease, background 0.2s ease;
 }
 .icon-btn:hover { border-color: var(--yellow); background: rgba(255,237,3,0.08); }
@@ -141,6 +155,7 @@ button:focus-visible {
   border: 1px solid var(--border);
   border-radius: 50%;
   cursor: pointer;
+  touch-action: manipulation;
   padding: 0;
 }
 .burger span {
@@ -182,7 +197,7 @@ button:focus-visible {
 }
 .hero-media {
   position: relative;
-  height: 58vh;
+  height: 58svh;
   min-height: 320px;
   max-height: 460px;
   overflow: hidden;
@@ -262,6 +277,7 @@ h1 {
   font-size: 0.95rem;
   font-weight: 700;
   cursor: pointer;
+  touch-action: manipulation;
   border: 1.5px solid transparent;
   transition: transform 0.15s ease, background 0.2s ease, color 0.2s ease, border-color 0.2s ease;
 }
@@ -321,14 +337,14 @@ h1 {
   .hero {
     flex-direction: row;
     align-items: stretch;
-    min-height: calc(100vh - 0px);
+    min-height: 100svh;
   }
   .hero-media {
     order: 2;
     flex: 1 1 46%;
     height: auto;
     max-height: none;
-    min-height: calc(100vh - 68px);
+    min-height: calc(100svh - 68px);
   }
   .hero-media-scrim {
     background: linear-gradient(to right, var(--bg) 0%, rgba(11,11,12,0) 22%);
