@@ -435,14 +435,15 @@ header {
 .hero-cta { display: flex; flex-wrap: wrap; gap: var(--space-2); margin-bottom: var(--space-5); }
 
 @media (max-width: 480px) {
-  .hero-cta { flex-wrap: nowrap; gap: 10px; }
+  .hero-cta { flex-wrap: nowrap; gap: 8px; margin-bottom: var(--space-4); }
   .hero-cta .btn {
     flex: 1;
-    padding: 13px 10px;
-    font-size: 0.76rem;
+    padding: 12px 8px;
+    font-size: 0.68rem;
     text-align: center;
     justify-content: center;
     white-space: normal;
+    line-height: 1.25;
   }
 }
 
