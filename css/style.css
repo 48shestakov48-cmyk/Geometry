@@ -5,7 +5,7 @@
    ============================================================ */
 
 @import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400&family=Montserrat:wght@300;400;500;600;700&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Beau+Rivage&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Miss+Fajardose&display=swap');
 
 /* ── Reset & Base ── */
 *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
@@ -318,16 +318,10 @@ header .logo img {
   will-change: transform;
 }
 .marquee-group span {
-  font-family: 'Beau Rivage', 'Brush Script MT', cursive;
-  font-size: clamp(6rem, 26vw, 15rem);
+  font-family: 'Miss Fajardose', 'Brush Script MT', cursive;
+  font-size: clamp(7rem, 64vw, 20rem);
   line-height: 1;
   color: #FF6FA5;
-}
-.marquee-group .marquee-dot {
-  font-family: var(--font-display);
-  font-size: clamp(1.6rem, 5vw, 3rem);
-  color: #E7899F;
-  opacity: 0.6;
 }
 @keyframes marquee-drift {
   from { transform: translateX(0); }
