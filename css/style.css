@@ -317,7 +317,7 @@ header .logo img {
 }
 .showcase-card {
   position: relative;
-  width: min(340px, 84vw);
+  width: min(230px, 58vw);
   border-radius: 6px;
   overflow: hidden;
   box-shadow: 0 50px 90px -20px rgba(60, 15, 25, 0.45);
@@ -332,7 +332,7 @@ header .logo img {
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
-  padding: 28px 24px;
+  padding: 20px 16px;
   background: linear-gradient(180deg, rgba(40,10,18,0.85) 0%, rgba(40,10,18,0.35) 38%, rgba(40,10,18,0) 60%, rgba(30,8,14,0.75) 100%);
 }
 .showcase-eyebrow {
@@ -342,10 +342,10 @@ header .logo img {
 }
 .showcase-script {
   font-family: 'Beau Rivage', 'Brush Script MT', cursive;
-  font-size: clamp(3rem, 9vw, 4.2rem);
+  font-size: clamp(1.8rem, 8vw, 2.6rem);
   color: #FF6FA5;
   line-height: 1;
-  margin-top: 6px;
+  margin-top: 4px;
 }
 .showcase-card-link {
   margin-top: auto;
